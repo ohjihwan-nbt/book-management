@@ -33,9 +33,10 @@
   const bookList = []
   let currentBook = undefined
   let countForCheckColumnIndex = undefined
+  const ifExistBookThenPushToBookList = book => { if(book instanceof Book) bookList.push(book) }
 
   const createNewBook = id => {
-    if(currentBook) bookList.push(currentBook)
+    ifExistBookThenPushToBookList(currentBook)
     
     currentBook = new Book()
     currentBook.setId(id)
@@ -63,6 +64,8 @@
       countForCheckColumnIndex++
     }
   })
+
+  ifExistBookThenPushToBookList(currentBook)
 
   fs.writeFileSync('./initialData.json', JSON.stringify(bookList))
 })()

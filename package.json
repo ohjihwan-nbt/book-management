@@ -1,0 +1,11 @@
+{
+  "name": "book-management",
+  "version": "0.0.1",
+  "description": "도서관리용 프로그램",
+  "keywords": [],
+  "author": "Oh jihwan <oh.jihwan@nbt.com>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "2.22.2"
+  }
+}

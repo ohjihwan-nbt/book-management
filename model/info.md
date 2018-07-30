@@ -7,6 +7,7 @@ Book
   S author: Nullable
   S publisher: Nullable
   L purchased_date : Nullable
+  L registered_date
   I registered_user_id: FK(User.user_id), but It can be null
 
 **사용자**

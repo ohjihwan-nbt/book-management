@@ -54,6 +54,8 @@ module.exports.routes = {
 
   'get  /api/v1/crypto/encode/:str' : 'CryptoController.encodeString',
   'get  /api/v1/crypto/decode/:str' : 'CryptoController.decodeString',
+  
+  'get  /api/v1/admin/test' : 'AdminController.test',
 
   // /api/v1/admin/... -> admin 필터 거쳐 처리되도록 : policies 의 beforeEnterController에서 모든 요청에 대해 필터링 처리
   '/*' : {

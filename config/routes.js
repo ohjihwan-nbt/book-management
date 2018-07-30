@@ -48,9 +48,9 @@ module.exports.routes = {
   'put  /api/v1/books/:bookId'         : 'BookController.modifyBookInformation',
   'get  /api/v1/books/search/:keyword' : 'BookController.searchBookListByKeyword', // 키워드 내에서 상태로 필터링하는 것은 클라이언트에서 처리할 것
 
-  'get  /api/v1/rents/:bookId'         : 'RentController.getRentalInformation', // 삭제
-  'put  /api/v1/rents/:userId/:bookId' : 'RentController.modifyRentalInformation', //self only
-  'post /api/v1/rents/:userId/:bookId' : 'RentController.addRentalInformation',
+  'get  /api/v1/rents/:bookId'         : 'RentalController.getRentalInformation', // 삭제
+  'put  /api/v1/rents/:userId/:bookId' : 'RentalController.modifyRentalInformation', //self only
+  'post /api/v1/rents/:userId/:bookId' : 'RentalController.addRentalInformation',
 
   'get  /api/v1/crypto/encode/:str' : 'CryptoController.encodeString',
   'get  /api/v1/crypto/decode/:str' : 'CryptoController.decodeString',

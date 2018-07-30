@@ -25,7 +25,7 @@ Rental
   I book_id : FK(Book.book_id)
   B is_returned
   L picked_up_date
-  L due_date
+  L return_date
 
 **대여 관리 속성**
 BookRentalPreferences

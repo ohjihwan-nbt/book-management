@@ -16,6 +16,7 @@ module.exports.policies = {
   * (`true` allows public access)                                            *
   *                                                                          *
   ***************************************************************************/
+  '*': 'beforeEnterController',
 
   // '*': true,
 
